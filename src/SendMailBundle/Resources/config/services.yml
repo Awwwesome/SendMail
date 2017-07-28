@@ -1,0 +1,9 @@
+parameters:
+    mail_factory.class: SendMailBundle\Mailer\MailFactory
+
+services:
+    mail_factory:
+        class: "%mail_factory.class%"
+        arguments:
+            - "@mailer"
+            - "%from_address%"

@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+{% block title %}Send Mail{% endblock %}
+{% block body %}
+    {% include 'BraincraftedBootstrapBundle::flash.html.twig' %}
+    <div class="container">
+        <h1>Send Mail</h1>
+        <div class="panel">
+            {{ form(form) }}
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,4 @@
+send_mail:
+    resource: "@SendMailBundle/Controller/"
+    type:     annotation
+    prefix:   /
